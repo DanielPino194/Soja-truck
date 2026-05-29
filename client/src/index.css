@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================
+   SOJA TRACK DESIGN SYSTEM
+   Domain: Financial/Agricultural data dashboard
+   Palette: Deep forest greens + amber warnings + data blues
+   ============================================= */
+
+@layer base {
+  :root {
+    /* Background layers — deep forest dark mode as default */
+    --background: 160 18% 7%;
+    --foreground: 150 8% 88%;
+
+    --card: 160 15% 9%;
+    --card-foreground: 150 8% 88%;
+
+    --popover: 160 15% 9%;
+    --popover-foreground: 150 8% 88%;
+
+    /* Primary: Muted agricultural green */
+    --primary: 152 38% 42%;
+    --primary-foreground: 150 20% 96%;
+
+    /* Secondary: subtle surface lift */
+    --secondary: 160 12% 14%;
+    --secondary-foreground: 150 8% 75%;
+
+    /* Muted: toned-down text/ui */
+    --muted: 160 10% 15%;
+    --muted-foreground: 150 6% 52%;
+
+    /* Accent: amber for alerts */
+    --accent: 38 85% 52%;
+    --accent-foreground: 40 90% 10%;
+
+    /* Destructive: red for extreme alerts */
+    --destructive: 4 75% 56%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders and inputs */
+    --border: 160 10% 18%;
+    --input: 160 10% 18%;
+    --ring: 152 38% 42%;
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 152 55% 48%;   /* Oil - green */
+    --chart-2: 210 70% 58%;   /* Meal - blue */
+    --chart-3: 38 85% 52%;    /* Bean - amber */
+    --chart-4: 280 55% 62%;   /* Ratio - purple */
+    --chart-5: 0 65% 55%;     /* Alert - red */
+
+    /* Custom tokens */
+    --color-oil: #3fad72;
+    --color-meal: #5b9bd5;
+    --color-bean: #f0a832;
+    --color-ratio: #a06cd5;
+    --color-alert: #e05c5c;
+    --color-rosario: #f97316;
+    --color-surface-glow: rgba(63, 173, 114, 0.06);
+    --color-grid: rgba(255,255,255,0.05);
+
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #root {
+    height: 100%;
+  }
+
+  /* Numbers always tabular */
+  .tabular { font-variant-numeric: tabular-nums lining-nums; }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
+
+  /* Chart canvas */
+  canvas { max-width: 100%; }
+}
+
+@layer utilities {
+  .font-mono { font-family: var(--font-mono); }
+  .font-body { font-family: var(--font-body); }
+  .text-oil { color: var(--color-oil); }
+  .text-meal { color: var(--color-meal); }
+  .text-bean { color: var(--color-bean); }
+  .text-ratio { color: var(--color-ratio); }
+  .text-alert-color { color: var(--color-alert); }
+  .text-rosario { color: var(--color-rosario); }
+  .bg-surface-glow { background: var(--color-surface-glow); }
+
+  .kpi-card {
+    @apply rounded-lg border bg-card p-4;
+    border-color: hsl(var(--border));
+    position: relative;
+    overflow: hidden;
+  }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .kpi-card.oil::before { background: var(--color-oil); }
+  .kpi-card.meal::before { background: var(--color-meal); }
+  .kpi-card.bean::before { background: var(--color-bean); }
+  .kpi-card.ratio::before { background: var(--color-ratio); }
+  .kpi-card.alert::before { background: var(--color-alert); }
+
+  .alert-badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium;
+    font-family: var(--font-mono);
+  }
+  .alert-badge.extreme {
+    background: rgba(224, 92, 92, 0.15);
+    color: var(--color-alert);
+    border: 1px solid rgba(224, 92, 92, 0.3);
+  }
+  .alert-badge.warning {
+    background: rgba(240, 168, 50, 0.15);
+    color: var(--color-bean);
+    border: 1px solid rgba(240, 168, 50, 0.3);
+  }
+
+  .shock-badge {
+    @apply inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs;
+  }
+  .shock-badge.palm_oil { background: rgba(90, 190, 100, 0.15); color: #5abc64; border: 1px solid rgba(90,190,100,0.25); }
+  .shock-badge.port_strike { background: rgba(224, 92, 92, 0.15); color: var(--color-alert); border: 1px solid rgba(224,92,92,0.25); }
+  .shock-badge.weather { background: rgba(91, 155, 213, 0.15); color: var(--color-meal); border: 1px solid rgba(91,155,213,0.25); }
+  .shock-badge.policy { background: rgba(160, 108, 213, 0.15); color: var(--color-ratio); border: 1px solid rgba(160,108,213,0.25); }
+
+  .nav-item {
+    @apply flex items-center gap-2 px-3 py-2 rounded-md text-sm cursor-pointer transition-colors;
+    color: hsl(var(--muted-foreground));
+  }
+  .nav-item:hover { background: hsl(var(--muted)); color: hsl(var(--foreground)); }
+  .nav-item.active { background: hsl(var(--primary) / 0.15); color: hsl(var(--primary)); }
+
+  .section-title {
+    @apply text-sm font-semibold uppercase tracking-wider;
+    color: hsl(var(--muted-foreground));
+    letter-spacing: 0.08em;
+  }
+}
