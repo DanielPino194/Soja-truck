@@ -95,7 +95,7 @@ export function Correlation() {
     "Aceite (¢/lb)": +r.oil_chicago.toFixed(2),
     "Harina ($/t ÷10)": +(r.meal_chicago / 10).toFixed(2),
     "Oil Rosario": +r.oil_rosario.toFixed(2),
-    "Harina Rosario ×10": +(r.meal_rosario * 10).toFixed(1),
+    "Harina Rosario": +r.meal_rosario.toFixed(1),
   }));
 
   return (
@@ -196,7 +196,7 @@ export function Correlation() {
             <Line type="monotone" dataKey="Aceite (¢/lb)" stroke="var(--color-oil)" strokeWidth={2} dot={false} />
             <Line type="monotone" dataKey="Oil Rosario" stroke="var(--color-rosario)" strokeWidth={1.5} strokeDasharray="5 3" dot={false} />
             <Line type="monotone" dataKey="Harina ($/t ÷10)" stroke="var(--color-meal)" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="Harina Rosario ×10" stroke="#7ecbc8" strokeWidth={1.5} strokeDasharray="5 3" dot={false} />
+            <Line type="monotone" dataKey="Harina Rosario" stroke="#7ecbc8" strokeWidth={1.5} strokeDasharray="5 3" dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
