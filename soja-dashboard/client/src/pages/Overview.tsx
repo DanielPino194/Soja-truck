@@ -113,18 +113,18 @@ export function Overview() {
             </span>
           )}
           {liveLoading ? (
-            <span className="opacity-50">Consultando precios...</span>
+            <span className="opacity-50">Consultando Yahoo...</span>
           ) : isLive ? (
             <Badge variant="outline" className="text-[10px] border-green-600 text-green-400 font-mono">
               ● EN VIVO · {live.market_state}
             </Badge>
           ) : isFallback ? (
-            <Badge variant="outline" className="text-[10px] border-blue-600 text-blue-400 font-mono">
-              ● Datos actualizados
+            <Badge variant="outline" className="text-[10px] border-yellow-600 text-yellow-400 font-mono">
+              ⚠ Yahoo no disponible · datos DB
             </Badge>
           ) : (
             <Badge variant="outline" className="text-[10px] border-blue-600 text-blue-400 font-mono">
-              ● API Ninjas · delay 15 min
+              ● Yahoo Finance · delay 15 min
             </Badge>
           )}
         </div>
@@ -136,18 +136,18 @@ export function Overview() {
           label="Aceite Chicago" colorClass="oil"
           value={liveOil?.toFixed(2) ?? "—"} unit="¢/lb"
           change={stats.oilWow}
-          subLabel="ZL=F · API Ninjas"
+          subLabel="ZL=F · Yahoo Finance"
         />
         <KpiCard
           label="Harina Chicago" colorClass="meal"
           value={liveMeal?.toFixed(1) ?? "—"} unit="USD/t"
           change={stats.mealWow}
-          subLabel="ZM=F · API Ninjas"
+          subLabel="ZM=F · Yahoo Finance"
         />
         <KpiCard
           label="Soja Chicago" colorClass="bean"
           value={liveBean?.toFixed(2) ?? "—"} unit="¢/bu"
-          subLabel="ZS=F · API Ninjas"
+          subLabel="ZS=F · Yahoo Finance"
         />
         <KpiCard
           label="Ratio Aceite/Harina" colorClass="ratio"

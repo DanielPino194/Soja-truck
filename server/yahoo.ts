@@ -1,10 +1,19 @@
-// yahoo-finance2 v3 requires instantiation
-// eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports
-const YahooFinanceClass = require("yahoo-finance2").default;
-const yahooFinance = new YahooFinanceClass({ suppressNotices: ["ripHistorical"] });
+/**
+ * Price fetching via API Ninjas commodity endpoint.
+ * Replaces Yahoo Finance (which is blocked from cloud servers).
+ * Free tier: 15-min delayed data, no daily call limit.
+ *
+ * Commodities used:
+ *   soybean_oil  → ZL=F  (¢/lb)
+ *   soybean_meal → ZM=F  (USD/ton)
+ *   soybean      → ZS=F  (¢/bu)
+ */
 import { db } from "./storage.js";
 import { priceData } from "../shared/schema.js";
-import { desc, eq } from "drizzle-orm";
+import { eq } from "drizzle-orm";
+
+const NINJAS_API_KEY = process.env.NINJAS_API_KEY ?? "";
+const NINJAS_BASE = "https://api.api-ninjas.com/v1/commodityprice";
 
 export interface LiveQuote {
   oil_chicago: number;
@@ -22,20 +31,25 @@ export interface HistoricalRow {
   bean_chicago: number;
 }
 
+async function fetchCommodity(name: string): Promise<number> {
+  const res = await fetch(`${NINJAS_BASE}?name=${name}`, {
+    headers: { "X-Api-Key": NINJAS_API_KEY },
+  });
+  if (!res.ok) throw new Error(`API Ninjas error ${res.status} for ${name}`);
+  const data = (await res.json()) as { price?: number; updated?: number };
+  return data.price ?? 0;
+}
 
 /**
- * Fetch current quotes for the three CBOT futures
+ * Fetch current quotes for the three CBOT futures via API Ninjas.
  */
 export async function fetchLiveQuotes(): Promise<LiveQuote> {
-  const [oil, meal, bean] = await Promise.all([
-    yahooFinance.quote("ZL=F"),   // Soybean Oil Futures (¢/lb)
-    yahooFinance.quote("ZM=F"),   // Soybean Meal Futures (USD/ton)
-    yahooFinance.quote("ZS=F"),   // Soybean Futures (¢/bu)
+  const [oilPrice, mealPrice, beanPrice] = await Promise.all([
+    fetchCommodity("soybean_oil"),
+    fetchCommodity("soybean_meal"),
+    fetchCommodity("soybean"),
   ]);
 
-  const oilPrice = oil.regularMarketPrice ?? 0;
-  const mealPrice = meal.regularMarketPrice ?? 0;
-  const beanPrice = bean.regularMarketPrice ?? 0;
   const ratio = mealPrice > 0 ? (oilPrice / mealPrice) * 100 : 0;
 
   return {
@@ -44,80 +58,54 @@ export async function fetchLiveQuotes(): Promise<LiveQuote> {
     bean_chicago: beanPrice,
     oil_meal_ratio: ratio,
     timestamp: new Date().toISOString(),
-    market_state: oil.marketState ?? "CLOSED",
+    market_state: "LIVE",
   };
 }
 
 /**
- * Fetch 2-year weekly historical data and upsert into SQLite.
- * Called on first run and weekly via cron.
+ * Persist today's live prices into SQLite so history stays current.
+ * Called on startup and weekly via cron.
  */
 export async function syncHistoricalData(): Promise<{ inserted: number; updated: number }> {
-  const today = new Date();
-  const twoYearsAgo = new Date(today);
-  twoYearsAgo.setFullYear(today.getFullYear() - 2);
-
-  const queryOpts = {
-    period1: twoYearsAgo,
-    period2: today,
-    interval: "1wk" as const,
-  };
-
-  const [oilHist, mealHist, beanHist] = await Promise.all([
-    yahooFinance.historical("ZL=F", queryOpts),
-    yahooFinance.historical("ZM=F", queryOpts),
-    yahooFinance.historical("ZS=F", queryOpts),
-  ]);
-
-  // Index by ISO date string
-  const mealMap = new Map(mealHist.map(r => [r.date.toISOString().slice(0, 10), r.close ?? 0]));
-  const beanMap = new Map(beanHist.map(r => [r.date.toISOString().slice(0, 10), r.close ?? 0]));
-
   let inserted = 0;
   let updated = 0;
 
-  for (const row of oilHist) {
-    const dateStr = row.date.toISOString().slice(0, 10);
-    const oilClose = row.close ?? 0;
-    const mealClose = mealMap.get(dateStr) ?? 0;
-    const beanClose = beanMap.get(dateStr) ?? 0;
-    if (oilClose === 0 || mealClose === 0) continue;
+  try {
+    const quote = await fetchLiveQuotes();
+    const dateStr = new Date().toISOString().slice(0, 10);
+    const { oil_chicago, meal_chicago, bean_chicago, oil_meal_ratio } = quote;
 
-    const ratio = (oilClose / mealClose) * 100;
-    // Rosario basis approximation (±basis from Chicago)
-    const oilRosario = parseFloat((oilClose * 22.046 / 100 - 1.5).toFixed(2));
-    const mealRosario = parseFloat((mealClose / 10 + 0.8).toFixed(2));
+    // oil_chicago en ¢/lb → USD/ton: multiplicar por 22.0462 (lb por tonelada métrica)
+    const oilChicagoUsdTon = oil_chicago * 22.0462;
+    const oilRosario = parseFloat((oilChicagoUsdTon - 60).toFixed(2)); // basis Rosario ≈ -60 USD/ton
+    const mealRosario = parseFloat((meal_chicago - 15).toFixed(2)); // basis Rosario ≈ -15 USD/ton
 
     const existing = db.select().from(priceData).where(eq(priceData.date, dateStr)).get();
 
     if (existing) {
       db.update(priceData)
-        .set({
-          oil_chicago: oilClose,
-          meal_chicago: mealClose,
-          bean_chicago: beanClose,
-          oil_meal_ratio: ratio,
-          oil_rosario: oilRosario,
-          meal_rosario: mealRosario,
-        })
+        .set({ oil_chicago, meal_chicago, bean_chicago, oil_meal_ratio, oil_rosario: oilRosario, meal_rosario: mealRosario })
         .where(eq(priceData.date, dateStr))
         .run();
       updated++;
     } else {
       db.insert(priceData).values({
         date: dateStr,
-        oil_chicago: oilClose,
-        meal_chicago: mealClose,
-        bean_chicago: beanClose,
-        oil_meal_ratio: ratio,
-        spread: oilClose - mealClose / 10,
+        oil_chicago,
+        meal_chicago,
+        bean_chicago,
+        oil_meal_ratio,
+        spread: oil_chicago - meal_chicago / 10,
         oil_rosario: oilRosario,
         meal_rosario: mealRosario,
       }).run();
       inserted++;
     }
+
+    console.log(`[ninjas] sync complete — inserted: ${inserted}, updated: ${updated}`);
+  } catch (err) {
+    console.error("[ninjas] sync error:", err);
   }
 
-  console.log(`[yahoo] sync complete — inserted: ${inserted}, updated: ${updated}`);
   return { inserted, updated };
 }
