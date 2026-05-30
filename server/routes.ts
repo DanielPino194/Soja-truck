@@ -195,7 +195,22 @@ export async function registerRoutes(httpServer: Server, app: Express): Promise<
   });
 
   // Trigger manual historical sync
-  app.post("/api/reseed", async (_req, res) => { try { const { db } = await import("./storage.js"); const { priceData, shockEvents } = await import("../shared/schema.js"); db.delete(priceData).run(); db.delete(shockEvents).run(); const { seedDatabase } = await import("./seed.js"); await seedDatabase(); res.json({ ok: true }); } catch (err) { res.status(500).json({ ok: false }); } }); app.post("/api/sync", async (_req, res) => {
+  app.post("/api/reseed", async (_req, res) => {
+    try {
+      const { db } = await import("./storage.js");
+      const { priceData, shockEvents } = await import("../shared/schema.js");
+      db.delete(priceData).run();
+      db.delete(shockEvents).run();
+      const { seedDatabase } = await import("./seed.js");
+      await seedDatabase();
+      liveCache = null;
+      res.json({ ok: true, message: "Base de datos reseteada con datos corregidos" });
+    } catch (err: any) {
+      res.status(500).json({ ok: false, error: err?.message });
+    }
+  });
+
+  app.post("/api/sync", async (_req, res) => {
     try {
       const result = await syncHistoricalData();
       liveCache = null; // invalidate live cache
