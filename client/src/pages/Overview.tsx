@@ -232,12 +232,12 @@ export function Overview() {
             <div className="text-muted-foreground text-lg">→</div>
             <div>
               <div className="text-xs text-muted-foreground">Disponible Rosario</div>
-              <div className="text-lg font-mono font-semibold text-rosario tabular">USD {(stats.currentMealRosario * 10).toFixed(1)}/MT</div>
+              <div className="text-lg font-mono font-semibold text-rosario tabular">USD {stats.currentMealRosario?.toFixed(1)}/MT</div>
             </div>
           </div>
           <div className="mt-2 text-xs text-muted-foreground">
             Basis: {stats.currentMealRosario && stats.currentMealChicago ?
-              `${(stats.currentMealRosario * 10 - stats.currentMealChicago * 1.1023).toFixed(1)} USD/MT` : "—"}
+              `${(stats.currentMealRosario - stats.currentMealChicago).toFixed(1)} USD/MT` : "—"}
           </div>
         </div>
       </div>
