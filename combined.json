@@ -1,0 +1,1052 @@
+[
+  {
+    "date": "2024-05-31",
+    "oil_chicago": 45.52,
+    "meal_chicago": 364.7,
+    "bean_chicago": 1205.0,
+    "oil_meal_ratio": 12.4815,
+    "spread": -30.17,
+    "oil_rosario": 943.54,
+    "meal_rosario": 349.7
+  },
+  {
+    "date": "2024-06-07",
+    "oil_chicago": 43.63,
+    "meal_chicago": 360.7,
+    "bean_chicago": 1179.25,
+    "oil_meal_ratio": 12.0959,
+    "spread": -30.14,
+    "oil_rosario": 901.88,
+    "meal_rosario": 345.7
+  },
+  {
+    "date": "2024-06-14",
+    "oil_chicago": 43.68,
+    "meal_chicago": 368.4,
+    "bean_chicago": 1149.75,
+    "oil_meal_ratio": 11.8567,
+    "spread": -30.98,
+    "oil_rosario": 902.98,
+    "meal_rosario": 353.4
+  },
+  {
+    "date": "2024-06-21",
+    "oil_chicago": 44.38,
+    "meal_chicago": 349.49,
+    "bean_chicago": 1152.96,
+    "oil_meal_ratio": 12.6985,
+    "spread": -28.74,
+    "oil_rosario": 918.41,
+    "meal_rosario": 334.49
+  },
+  {
+    "date": "2024-06-28",
+    "oil_chicago": 44.34,
+    "meal_chicago": 370.65,
+    "bean_chicago": 1200.51,
+    "oil_meal_ratio": 11.9628,
+    "spread": -31.08,
+    "oil_rosario": 917.53,
+    "meal_rosario": 355.65
+  },
+  {
+    "date": "2024-07-05",
+    "oil_chicago": 42.92,
+    "meal_chicago": 368.03,
+    "bean_chicago": 1129.34,
+    "oil_meal_ratio": 11.6621,
+    "spread": -31.11,
+    "oil_rosario": 886.22,
+    "meal_rosario": 353.03
+  },
+  {
+    "date": "2024-07-12",
+    "oil_chicago": 45.06,
+    "meal_chicago": 358.52,
+    "bean_chicago": 1116.82,
+    "oil_meal_ratio": 12.5683,
+    "spread": -29.59,
+    "oil_rosario": 933.4,
+    "meal_rosario": 343.52
+  },
+  {
+    "date": "2024-07-19",
+    "oil_chicago": 44.49,
+    "meal_chicago": 356.5,
+    "bean_chicago": 1131.27,
+    "oil_meal_ratio": 12.4797,
+    "spread": -29.49,
+    "oil_rosario": 920.84,
+    "meal_rosario": 341.5
+  },
+  {
+    "date": "2024-07-26",
+    "oil_chicago": 44.65,
+    "meal_chicago": 359.54,
+    "bean_chicago": 1146.86,
+    "oil_meal_ratio": 12.4186,
+    "spread": -29.79,
+    "oil_rosario": 924.36,
+    "meal_rosario": 344.54
+  },
+  {
+    "date": "2024-08-02",
+    "oil_chicago": 45.13,
+    "meal_chicago": 370.44,
+    "bean_chicago": 1148.79,
+    "oil_meal_ratio": 12.1828,
+    "spread": -30.88,
+    "oil_rosario": 934.95,
+    "meal_rosario": 355.44
+  },
+  {
+    "date": "2024-08-09",
+    "oil_chicago": 45.37,
+    "meal_chicago": 349.09,
+    "bean_chicago": 1157.11,
+    "oil_meal_ratio": 12.9966,
+    "spread": -28.48,
+    "oil_rosario": 940.24,
+    "meal_rosario": 334.09
+  },
+  {
+    "date": "2024-08-16",
+    "oil_chicago": 46.52,
+    "meal_chicago": 352.1,
+    "bean_chicago": 1128.94,
+    "oil_meal_ratio": 13.2122,
+    "spread": -28.56,
+    "oil_rosario": 965.59,
+    "meal_rosario": 337.1
+  },
+  {
+    "date": "2024-08-23",
+    "oil_chicago": 46.06,
+    "meal_chicago": 363.3,
+    "bean_chicago": 1104.29,
+    "oil_meal_ratio": 12.6782,
+    "spread": -29.89,
+    "oil_rosario": 955.45,
+    "meal_rosario": 348.3
+  },
+  {
+    "date": "2024-08-30",
+    "oil_chicago": 45.54,
+    "meal_chicago": 349.05,
+    "bean_chicago": 1122.29,
+    "oil_meal_ratio": 13.0468,
+    "spread": -28.44,
+    "oil_rosario": 943.98,
+    "meal_rosario": 334.05
+  },
+  {
+    "date": "2024-09-06",
+    "oil_chicago": 44.68,
+    "meal_chicago": 348.16,
+    "bean_chicago": 1148.81,
+    "oil_meal_ratio": 12.8332,
+    "spread": -28.53,
+    "oil_rosario": 925.02,
+    "meal_rosario": 333.16
+  },
+  {
+    "date": "2024-09-13",
+    "oil_chicago": 44.47,
+    "meal_chicago": 349.93,
+    "bean_chicago": 1133.87,
+    "oil_meal_ratio": 12.7083,
+    "spread": -28.77,
+    "oil_rosario": 920.39,
+    "meal_rosario": 334.93
+  },
+  {
+    "date": "2024-09-20",
+    "oil_chicago": 46.01,
+    "meal_chicago": 339.14,
+    "bean_chicago": 1091.18,
+    "oil_meal_ratio": 13.5667,
+    "spread": -27.24,
+    "oil_rosario": 954.35,
+    "meal_rosario": 324.14
+  },
+  {
+    "date": "2024-09-27",
+    "oil_chicago": 47.33,
+    "meal_chicago": 347.82,
+    "bean_chicago": 1121.76,
+    "oil_meal_ratio": 13.6076,
+    "spread": -27.91,
+    "oil_rosario": 983.45,
+    "meal_rosario": 332.82
+  },
+  {
+    "date": "2024-10-04",
+    "oil_chicago": 45.98,
+    "meal_chicago": 336.48,
+    "bean_chicago": 1144.03,
+    "oil_meal_ratio": 13.665,
+    "spread": -26.95,
+    "oil_rosario": 953.68,
+    "meal_rosario": 321.48
+  },
+  {
+    "date": "2024-10-11",
+    "oil_chicago": 45.91,
+    "meal_chicago": 349.43,
+    "bean_chicago": 1154.38,
+    "oil_meal_ratio": 13.1385,
+    "spread": -28.4,
+    "oil_rosario": 952.14,
+    "meal_rosario": 334.43
+  },
+  {
+    "date": "2024-10-18",
+    "oil_chicago": 46.75,
+    "meal_chicago": 341.9,
+    "bean_chicago": 1126.28,
+    "oil_meal_ratio": 13.6736,
+    "spread": -27.38,
+    "oil_rosario": 970.66,
+    "meal_rosario": 326.9
+  },
+  {
+    "date": "2024-10-25",
+    "oil_chicago": 44.56,
+    "meal_chicago": 355.95,
+    "bean_chicago": 1120.22,
+    "oil_meal_ratio": 12.5186,
+    "spread": -29.41,
+    "oil_rosario": 922.38,
+    "meal_rosario": 340.95
+  },
+  {
+    "date": "2024-11-01",
+    "oil_chicago": 45.99,
+    "meal_chicago": 340.83,
+    "bean_chicago": 1092.51,
+    "oil_meal_ratio": 13.4935,
+    "spread": -27.43,
+    "oil_rosario": 953.9,
+    "meal_rosario": 325.83
+  },
+  {
+    "date": "2024-11-08",
+    "oil_chicago": 47.02,
+    "meal_chicago": 346.67,
+    "bean_chicago": 1097.34,
+    "oil_meal_ratio": 13.5633,
+    "spread": -27.85,
+    "oil_rosario": 976.61,
+    "meal_rosario": 331.67
+  },
+  {
+    "date": "2024-11-15",
+    "oil_chicago": 47.57,
+    "meal_chicago": 327.23,
+    "bean_chicago": 1110.35,
+    "oil_meal_ratio": 14.5372,
+    "spread": -25.58,
+    "oil_rosario": 988.74,
+    "meal_rosario": 312.23
+  },
+  {
+    "date": "2024-11-22",
+    "oil_chicago": 46.38,
+    "meal_chicago": 333.69,
+    "bean_chicago": 1116.1,
+    "oil_meal_ratio": 13.8991,
+    "spread": -26.56,
+    "oil_rosario": 962.5,
+    "meal_rosario": 318.69
+  },
+  {
+    "date": "2024-11-29",
+    "oil_chicago": 47.2,
+    "meal_chicago": 335.19,
+    "bean_chicago": 1115.54,
+    "oil_meal_ratio": 14.0816,
+    "spread": -26.54,
+    "oil_rosario": 980.58,
+    "meal_rosario": 320.19
+  },
+  {
+    "date": "2024-12-06",
+    "oil_chicago": 47.16,
+    "meal_chicago": 343.14,
+    "bean_chicago": 1096.17,
+    "oil_meal_ratio": 13.7437,
+    "spread": -27.43,
+    "oil_rosario": 979.7,
+    "meal_rosario": 328.14
+  },
+  {
+    "date": "2024-12-13",
+    "oil_chicago": 47.89,
+    "meal_chicago": 318.99,
+    "bean_chicago": 1083.21,
+    "oil_meal_ratio": 15.013,
+    "spread": -24.6,
+    "oil_rosario": 995.79,
+    "meal_rosario": 303.99
+  },
+  {
+    "date": "2024-12-20",
+    "oil_chicago": 45.76,
+    "meal_chicago": 335.13,
+    "bean_chicago": 1087.6,
+    "oil_meal_ratio": 13.6544,
+    "spread": -26.85,
+    "oil_rosario": 948.83,
+    "meal_rosario": 320.13
+  },
+  {
+    "date": "2024-12-27",
+    "oil_chicago": 47.85,
+    "meal_chicago": 331.01,
+    "bean_chicago": 1079.54,
+    "oil_meal_ratio": 14.4558,
+    "spread": -25.94,
+    "oil_rosario": 994.91,
+    "meal_rosario": 316.01
+  },
+  {
+    "date": "2025-01-03",
+    "oil_chicago": 45.49,
+    "meal_chicago": 335.66,
+    "bean_chicago": 1107.37,
+    "oil_meal_ratio": 13.5524,
+    "spread": -26.97,
+    "oil_rosario": 942.88,
+    "meal_rosario": 320.66
+  },
+  {
+    "date": "2025-01-10",
+    "oil_chicago": 44.28,
+    "meal_chicago": 328.81,
+    "bean_chicago": 1056.98,
+    "oil_meal_ratio": 13.4667,
+    "spread": -26.48,
+    "oil_rosario": 916.21,
+    "meal_rosario": 313.81
+  },
+  {
+    "date": "2025-01-17",
+    "oil_chicago": 46.77,
+    "meal_chicago": 323.06,
+    "bean_chicago": 1087.66,
+    "oil_meal_ratio": 14.4772,
+    "spread": -25.3,
+    "oil_rosario": 971.1,
+    "meal_rosario": 308.06
+  },
+  {
+    "date": "2025-01-24",
+    "oil_chicago": 46.5,
+    "meal_chicago": 317.9,
+    "bean_chicago": 1098.67,
+    "oil_meal_ratio": 14.6272,
+    "spread": -24.79,
+    "oil_rosario": 965.15,
+    "meal_rosario": 302.9
+  },
+  {
+    "date": "2025-01-31",
+    "oil_chicago": 48.74,
+    "meal_chicago": 311.79,
+    "bean_chicago": 1114.35,
+    "oil_meal_ratio": 15.6323,
+    "spread": -23.62,
+    "oil_rosario": 1014.53,
+    "meal_rosario": 296.79
+  },
+  {
+    "date": "2025-02-07",
+    "oil_chicago": 48.59,
+    "meal_chicago": 319.55,
+    "bean_chicago": 1088.81,
+    "oil_meal_ratio": 15.2058,
+    "spread": -24.51,
+    "oil_rosario": 1011.22,
+    "meal_rosario": 304.55
+  },
+  {
+    "date": "2025-02-14",
+    "oil_chicago": 46.44,
+    "meal_chicago": 315.61,
+    "bean_chicago": 1102.13,
+    "oil_meal_ratio": 14.7144,
+    "spread": -24.55,
+    "oil_rosario": 963.83,
+    "meal_rosario": 300.61
+  },
+  {
+    "date": "2025-02-21",
+    "oil_chicago": 49.02,
+    "meal_chicago": 328.1,
+    "bean_chicago": 1077.51,
+    "oil_meal_ratio": 14.9406,
+    "spread": -25.36,
+    "oil_rosario": 1020.7,
+    "meal_rosario": 313.1
+  },
+  {
+    "date": "2025-02-28",
+    "oil_chicago": 46.9,
+    "meal_chicago": 310.05,
+    "bean_chicago": 1070.08,
+    "oil_meal_ratio": 15.1266,
+    "spread": -23.84,
+    "oil_rosario": 973.97,
+    "meal_rosario": 295.05
+  },
+  {
+    "date": "2025-03-07",
+    "oil_chicago": 48.11,
+    "meal_chicago": 314.41,
+    "bean_chicago": 1069.41,
+    "oil_meal_ratio": 15.3017,
+    "spread": -24.05,
+    "oil_rosario": 1000.64,
+    "meal_rosario": 299.41
+  },
+  {
+    "date": "2025-03-14",
+    "oil_chicago": 47.96,
+    "meal_chicago": 301.18,
+    "bean_chicago": 1103.22,
+    "oil_meal_ratio": 15.924,
+    "spread": -22.63,
+    "oil_rosario": 997.34,
+    "meal_rosario": 286.18
+  },
+  {
+    "date": "2025-03-21",
+    "oil_chicago": 48.56,
+    "meal_chicago": 307.01,
+    "bean_chicago": 1092.75,
+    "oil_meal_ratio": 15.8171,
+    "spread": -23.14,
+    "oil_rosario": 1010.56,
+    "meal_rosario": 292.01
+  },
+  {
+    "date": "2025-03-28",
+    "oil_chicago": 49.51,
+    "meal_chicago": 309.6,
+    "bean_chicago": 1082.72,
+    "oil_meal_ratio": 15.9916,
+    "spread": -23.21,
+    "oil_rosario": 1031.51,
+    "meal_rosario": 294.6
+  },
+  {
+    "date": "2025-04-04",
+    "oil_chicago": 49.4,
+    "meal_chicago": 311.57,
+    "bean_chicago": 1126.64,
+    "oil_meal_ratio": 15.8552,
+    "spread": -23.45,
+    "oil_rosario": 1029.08,
+    "meal_rosario": 296.57
+  },
+  {
+    "date": "2025-04-11",
+    "oil_chicago": 49.15,
+    "meal_chicago": 313.88,
+    "bean_chicago": 1070.69,
+    "oil_meal_ratio": 15.6589,
+    "spread": -23.76,
+    "oil_rosario": 1023.57,
+    "meal_rosario": 298.88
+  },
+  {
+    "date": "2025-04-18",
+    "oil_chicago": 49.63,
+    "meal_chicago": 303.3,
+    "bean_chicago": 1079.33,
+    "oil_meal_ratio": 16.3633,
+    "spread": -22.49,
+    "oil_rosario": 1034.15,
+    "meal_rosario": 288.3
+  },
+  {
+    "date": "2025-04-25",
+    "oil_chicago": 49.52,
+    "meal_chicago": 295.34,
+    "bean_chicago": 1072.48,
+    "oil_meal_ratio": 16.7671,
+    "spread": -21.64,
+    "oil_rosario": 1031.73,
+    "meal_rosario": 280.34
+  },
+  {
+    "date": "2025-05-02",
+    "oil_chicago": 48.27,
+    "meal_chicago": 303.37,
+    "bean_chicago": 1062.18,
+    "oil_meal_ratio": 15.9113,
+    "spread": -22.8,
+    "oil_rosario": 1004.17,
+    "meal_rosario": 288.37
+  },
+  {
+    "date": "2025-05-09",
+    "oil_chicago": 48.26,
+    "meal_chicago": 302.24,
+    "bean_chicago": 1100.87,
+    "oil_meal_ratio": 15.9674,
+    "spread": -22.68,
+    "oil_rosario": 1003.95,
+    "meal_rosario": 287.24
+  },
+  {
+    "date": "2025-05-16",
+    "oil_chicago": 48.67,
+    "meal_chicago": 300.6,
+    "bean_chicago": 1086.08,
+    "oil_meal_ratio": 16.191,
+    "spread": -22.41,
+    "oil_rosario": 1012.99,
+    "meal_rosario": 285.6
+  },
+  {
+    "date": "2025-05-23",
+    "oil_chicago": 49.35,
+    "meal_chicago": 296.2,
+    "bean_chicago": 1060.25,
+    "oil_meal_ratio": 16.661,
+    "spread": -21.77,
+    "oil_rosario": 1027.98,
+    "meal_rosario": 281.2
+  },
+  {
+    "date": "2025-05-30",
+    "oil_chicago": 46.89,
+    "meal_chicago": 296.3,
+    "bean_chicago": 1041.75,
+    "oil_meal_ratio": 15.8252,
+    "spread": -22.32,
+    "oil_rosario": 973.75,
+    "meal_rosario": 281.3
+  },
+  {
+    "date": "2025-06-06",
+    "oil_chicago": 47.5,
+    "meal_chicago": 295.7,
+    "bean_chicago": 1057.25,
+    "oil_meal_ratio": 16.0636,
+    "spread": -22.12,
+    "oil_rosario": 987.19,
+    "meal_rosario": 280.7
+  },
+  {
+    "date": "2025-06-13",
+    "oil_chicago": 47.08,
+    "meal_chicago": 300.74,
+    "bean_chicago": 1072.48,
+    "oil_meal_ratio": 15.6547,
+    "spread": -22.77,
+    "oil_rosario": 977.94,
+    "meal_rosario": 285.74
+  },
+  {
+    "date": "2025-06-20",
+    "oil_chicago": 47.3,
+    "meal_chicago": 305.05,
+    "bean_chicago": 1041.3,
+    "oil_meal_ratio": 15.5057,
+    "spread": -23.2,
+    "oil_rosario": 982.79,
+    "meal_rosario": 290.05
+  },
+  {
+    "date": "2025-06-27",
+    "oil_chicago": 50.15,
+    "meal_chicago": 302.0,
+    "bean_chicago": 1029.52,
+    "oil_meal_ratio": 16.606,
+    "spread": -22.23,
+    "oil_rosario": 1045.62,
+    "meal_rosario": 287.0
+  },
+  {
+    "date": "2025-07-04",
+    "oil_chicago": 51.54,
+    "meal_chicago": 300.96,
+    "bean_chicago": 1037.8,
+    "oil_meal_ratio": 17.1252,
+    "spread": -21.81,
+    "oil_rosario": 1076.26,
+    "meal_rosario": 285.96
+  },
+  {
+    "date": "2025-07-11",
+    "oil_chicago": 50.97,
+    "meal_chicago": 313.06,
+    "bean_chicago": 1069.98,
+    "oil_meal_ratio": 16.2812,
+    "spread": -23.27,
+    "oil_rosario": 1063.69,
+    "meal_rosario": 298.06
+  },
+  {
+    "date": "2025-07-18",
+    "oil_chicago": 51.97,
+    "meal_chicago": 302.49,
+    "bean_chicago": 1072.24,
+    "oil_meal_ratio": 17.1807,
+    "spread": -21.89,
+    "oil_rosario": 1085.74,
+    "meal_rosario": 287.49
+  },
+  {
+    "date": "2025-07-25",
+    "oil_chicago": 53.31,
+    "meal_chicago": 300.12,
+    "bean_chicago": 1082.25,
+    "oil_meal_ratio": 17.7629,
+    "spread": -21.33,
+    "oil_rosario": 1115.28,
+    "meal_rosario": 285.12
+  },
+  {
+    "date": "2025-08-01",
+    "oil_chicago": 51.92,
+    "meal_chicago": 303.47,
+    "bean_chicago": 1066.98,
+    "oil_meal_ratio": 17.1088,
+    "spread": -22.01,
+    "oil_rosario": 1084.64,
+    "meal_rosario": 288.47
+  },
+  {
+    "date": "2025-08-08",
+    "oil_chicago": 50.73,
+    "meal_chicago": 312.69,
+    "bean_chicago": 1062.35,
+    "oil_meal_ratio": 16.2237,
+    "spread": -23.28,
+    "oil_rosario": 1058.4,
+    "meal_rosario": 297.69
+  },
+  {
+    "date": "2025-08-15",
+    "oil_chicago": 52.47,
+    "meal_chicago": 305.29,
+    "bean_chicago": 1052.07,
+    "oil_meal_ratio": 17.1869,
+    "spread": -22.08,
+    "oil_rosario": 1096.76,
+    "meal_rosario": 290.29
+  },
+  {
+    "date": "2025-08-22",
+    "oil_chicago": 55.02,
+    "meal_chicago": 308.63,
+    "bean_chicago": 1093.14,
+    "oil_meal_ratio": 17.8272,
+    "spread": -21.89,
+    "oil_rosario": 1152.98,
+    "meal_rosario": 293.63
+  },
+  {
+    "date": "2025-08-29",
+    "oil_chicago": 52.35,
+    "meal_chicago": 313.67,
+    "bean_chicago": 1096.6,
+    "oil_meal_ratio": 16.6895,
+    "spread": -23.03,
+    "oil_rosario": 1094.12,
+    "meal_rosario": 298.67
+  },
+  {
+    "date": "2025-09-05",
+    "oil_chicago": 54.92,
+    "meal_chicago": 304.08,
+    "bean_chicago": 1109.61,
+    "oil_meal_ratio": 18.061,
+    "spread": -21.41,
+    "oil_rosario": 1150.78,
+    "meal_rosario": 289.08
+  },
+  {
+    "date": "2025-09-12",
+    "oil_chicago": 55.79,
+    "meal_chicago": 297.47,
+    "bean_chicago": 1109.1,
+    "oil_meal_ratio": 18.7548,
+    "spread": -20.49,
+    "oil_rosario": 1169.96,
+    "meal_rosario": 282.47
+  },
+  {
+    "date": "2025-09-19",
+    "oil_chicago": 55.57,
+    "meal_chicago": 310.85,
+    "bean_chicago": 1095.73,
+    "oil_meal_ratio": 17.8768,
+    "spread": -22.01,
+    "oil_rosario": 1165.11,
+    "meal_rosario": 295.85
+  },
+  {
+    "date": "2025-09-26",
+    "oil_chicago": 57.6,
+    "meal_chicago": 311.31,
+    "bean_chicago": 1123.94,
+    "oil_meal_ratio": 18.5025,
+    "spread": -21.62,
+    "oil_rosario": 1209.86,
+    "meal_rosario": 296.31
+  },
+  {
+    "date": "2025-10-03",
+    "oil_chicago": 57.97,
+    "meal_chicago": 306.99,
+    "bean_chicago": 1102.16,
+    "oil_meal_ratio": 18.8834,
+    "spread": -21.06,
+    "oil_rosario": 1218.02,
+    "meal_rosario": 291.99
+  },
+  {
+    "date": "2025-10-10",
+    "oil_chicago": 61.06,
+    "meal_chicago": 317.09,
+    "bean_chicago": 1096.22,
+    "oil_meal_ratio": 19.2564,
+    "spread": -21.49,
+    "oil_rosario": 1286.14,
+    "meal_rosario": 302.09
+  },
+  {
+    "date": "2025-10-17",
+    "oil_chicago": 59.18,
+    "meal_chicago": 316.34,
+    "bean_chicago": 1101.3,
+    "oil_meal_ratio": 18.7077,
+    "spread": -21.82,
+    "oil_rosario": 1244.69,
+    "meal_rosario": 301.34
+  },
+  {
+    "date": "2025-10-24",
+    "oil_chicago": 57.95,
+    "meal_chicago": 307.2,
+    "bean_chicago": 1102.98,
+    "oil_meal_ratio": 18.8639,
+    "spread": -21.09,
+    "oil_rosario": 1217.58,
+    "meal_rosario": 292.2
+  },
+  {
+    "date": "2025-10-31",
+    "oil_chicago": 58.58,
+    "meal_chicago": 317.58,
+    "bean_chicago": 1079.28,
+    "oil_meal_ratio": 18.4457,
+    "spread": -22.09,
+    "oil_rosario": 1231.47,
+    "meal_rosario": 302.58
+  },
+  {
+    "date": "2025-11-07",
+    "oil_chicago": 58.73,
+    "meal_chicago": 313.97,
+    "bean_chicago": 1120.91,
+    "oil_meal_ratio": 18.7056,
+    "spread": -21.66,
+    "oil_rosario": 1234.77,
+    "meal_rosario": 298.97
+  },
+  {
+    "date": "2025-11-14",
+    "oil_chicago": 61.99,
+    "meal_chicago": 306.72,
+    "bean_chicago": 1125.27,
+    "oil_meal_ratio": 20.2106,
+    "spread": -20.14,
+    "oil_rosario": 1306.64,
+    "meal_rosario": 291.72
+  },
+  {
+    "date": "2025-11-21",
+    "oil_chicago": 60.25,
+    "meal_chicago": 319.85,
+    "bean_chicago": 1117.73,
+    "oil_meal_ratio": 18.837,
+    "spread": -21.97,
+    "oil_rosario": 1268.28,
+    "meal_rosario": 304.85
+  },
+  {
+    "date": "2025-11-28",
+    "oil_chicago": 61.57,
+    "meal_chicago": 317.58,
+    "bean_chicago": 1114.55,
+    "oil_meal_ratio": 19.3872,
+    "spread": -21.43,
+    "oil_rosario": 1297.38,
+    "meal_rosario": 302.58
+  },
+  {
+    "date": "2025-12-05",
+    "oil_chicago": 63.41,
+    "meal_chicago": 314.0,
+    "bean_chicago": 1135.69,
+    "oil_meal_ratio": 20.1943,
+    "spread": -20.63,
+    "oil_rosario": 1337.95,
+    "meal_rosario": 299.0
+  },
+  {
+    "date": "2025-12-12",
+    "oil_chicago": 61.68,
+    "meal_chicago": 322.98,
+    "bean_chicago": 1161.32,
+    "oil_meal_ratio": 19.0972,
+    "spread": -22.0,
+    "oil_rosario": 1299.81,
+    "meal_rosario": 307.98
+  },
+  {
+    "date": "2025-12-19",
+    "oil_chicago": 62.92,
+    "meal_chicago": 323.66,
+    "bean_chicago": 1135.59,
+    "oil_meal_ratio": 19.4402,
+    "spread": -21.81,
+    "oil_rosario": 1327.15,
+    "meal_rosario": 308.66
+  },
+  {
+    "date": "2025-12-26",
+    "oil_chicago": 61.01,
+    "meal_chicago": 317.7,
+    "bean_chicago": 1129.05,
+    "oil_meal_ratio": 19.2037,
+    "spread": -21.57,
+    "oil_rosario": 1285.04,
+    "meal_rosario": 302.7
+  },
+  {
+    "date": "2026-01-02",
+    "oil_chicago": 62.77,
+    "meal_chicago": 324.88,
+    "bean_chicago": 1130.37,
+    "oil_meal_ratio": 19.321,
+    "spread": -21.97,
+    "oil_rosario": 1323.84,
+    "meal_rosario": 309.88
+  },
+  {
+    "date": "2026-01-09",
+    "oil_chicago": 64.16,
+    "meal_chicago": 329.75,
+    "bean_chicago": 1142.07,
+    "oil_meal_ratio": 19.4572,
+    "spread": -22.2,
+    "oil_rosario": 1354.48,
+    "meal_rosario": 314.75
+  },
+  {
+    "date": "2026-01-16",
+    "oil_chicago": 66.33,
+    "meal_chicago": 319.45,
+    "bean_chicago": 1124.3,
+    "oil_meal_ratio": 20.7638,
+    "spread": -20.59,
+    "oil_rosario": 1402.32,
+    "meal_rosario": 304.45
+  },
+  {
+    "date": "2026-01-23",
+    "oil_chicago": 68.2,
+    "meal_chicago": 327.44,
+    "bean_chicago": 1146.65,
+    "oil_meal_ratio": 20.8282,
+    "spread": -21.06,
+    "oil_rosario": 1443.55,
+    "meal_rosario": 312.44
+  },
+  {
+    "date": "2026-01-30",
+    "oil_chicago": 66.76,
+    "meal_chicago": 325.86,
+    "bean_chicago": 1152.64,
+    "oil_meal_ratio": 20.4873,
+    "spread": -21.2,
+    "oil_rosario": 1411.8,
+    "meal_rosario": 310.86
+  },
+  {
+    "date": "2026-02-06",
+    "oil_chicago": 67.79,
+    "meal_chicago": 341.54,
+    "bean_chicago": 1186.3,
+    "oil_meal_ratio": 19.8483,
+    "spread": -22.7,
+    "oil_rosario": 1434.51,
+    "meal_rosario": 326.54
+  },
+  {
+    "date": "2026-02-13",
+    "oil_chicago": 68.21,
+    "meal_chicago": 315.42,
+    "bean_chicago": 1173.51,
+    "oil_meal_ratio": 21.6251,
+    "spread": -19.73,
+    "oil_rosario": 1443.77,
+    "meal_rosario": 300.42
+  },
+  {
+    "date": "2026-02-20",
+    "oil_chicago": 70.35,
+    "meal_chicago": 333.07,
+    "bean_chicago": 1177.9,
+    "oil_meal_ratio": 21.1217,
+    "spread": -21.2,
+    "oil_rosario": 1490.95,
+    "meal_rosario": 318.07
+  },
+  {
+    "date": "2026-02-27",
+    "oil_chicago": 70.6,
+    "meal_chicago": 327.38,
+    "bean_chicago": 1150.25,
+    "oil_meal_ratio": 21.5652,
+    "spread": -20.52,
+    "oil_rosario": 1496.46,
+    "meal_rosario": 312.38
+  },
+  {
+    "date": "2026-03-06",
+    "oil_chicago": 70.1,
+    "meal_chicago": 329.62,
+    "bean_chicago": 1177.17,
+    "oil_meal_ratio": 21.2669,
+    "spread": -20.88,
+    "oil_rosario": 1485.44,
+    "meal_rosario": 314.62
+  },
+  {
+    "date": "2026-03-13",
+    "oil_chicago": 68.42,
+    "meal_chicago": 343.76,
+    "bean_chicago": 1148.27,
+    "oil_meal_ratio": 19.9034,
+    "spread": -22.81,
+    "oil_rosario": 1448.4,
+    "meal_rosario": 328.76
+  },
+  {
+    "date": "2026-03-20",
+    "oil_chicago": 72.36,
+    "meal_chicago": 332.0,
+    "bean_chicago": 1176.49,
+    "oil_meal_ratio": 21.7952,
+    "spread": -20.64,
+    "oil_rosario": 1535.26,
+    "meal_rosario": 317.0
+  },
+  {
+    "date": "2026-03-27",
+    "oil_chicago": 72.0,
+    "meal_chicago": 347.86,
+    "bean_chicago": 1181.16,
+    "oil_meal_ratio": 20.698,
+    "spread": -22.47,
+    "oil_rosario": 1527.33,
+    "meal_rosario": 332.86
+  },
+  {
+    "date": "2026-04-03",
+    "oil_chicago": 74.1,
+    "meal_chicago": 330.87,
+    "bean_chicago": 1163.03,
+    "oil_meal_ratio": 22.3955,
+    "spread": -20.14,
+    "oil_rosario": 1573.62,
+    "meal_rosario": 315.87
+  },
+  {
+    "date": "2026-04-10",
+    "oil_chicago": 72.4,
+    "meal_chicago": 337.06,
+    "bean_chicago": 1214.7,
+    "oil_meal_ratio": 21.4799,
+    "spread": -21.19,
+    "oil_rosario": 1536.14,
+    "meal_rosario": 322.06
+  },
+  {
+    "date": "2026-04-17",
+    "oil_chicago": 76.59,
+    "meal_chicago": 332.31,
+    "bean_chicago": 1192.17,
+    "oil_meal_ratio": 23.0478,
+    "spread": -19.75,
+    "oil_rosario": 1628.52,
+    "meal_rosario": 317.31
+  },
+  {
+    "date": "2026-04-24",
+    "oil_chicago": 72.93,
+    "meal_chicago": 331.84,
+    "bean_chicago": 1151.07,
+    "oil_meal_ratio": 21.9775,
+    "spread": -20.5,
+    "oil_rosario": 1547.83,
+    "meal_rosario": 316.84
+  },
+  {
+    "date": "2026-05-01",
+    "oil_chicago": 77.11,
+    "meal_chicago": 337.79,
+    "bean_chicago": 1197.51,
+    "oil_meal_ratio": 22.8278,
+    "spread": -20.23,
+    "oil_rosario": 1639.98,
+    "meal_rosario": 322.79
+  },
+  {
+    "date": "2026-05-08",
+    "oil_chicago": 74.94,
+    "meal_chicago": 336.35,
+    "bean_chicago": 1183.16,
+    "oil_meal_ratio": 22.2804,
+    "spread": -20.55,
+    "oil_rosario": 1592.14,
+    "meal_rosario": 321.35
+  },
+  {
+    "date": "2026-05-15",
+    "oil_chicago": 73.61,
+    "meal_chicago": 340.52,
+    "bean_chicago": 1193.23,
+    "oil_meal_ratio": 21.6169,
+    "spread": -21.31,
+    "oil_rosario": 1562.82,
+    "meal_rosario": 325.52
+  },
+  {
+    "date": "2026-05-22",
+    "oil_chicago": 73.98,
+    "meal_chicago": 331.9,
+    "bean_chicago": 1196.5,
+    "oil_meal_ratio": 22.2898,
+    "spread": -20.28,
+    "oil_rosario": 1570.98,
+    "meal_rosario": 316.9
+  },
+  {
+    "date": "2026-05-29",
+    "oil_chicago": 73.7,
+    "meal_chicago": 333.1,
+    "bean_chicago": 1194.75,
+    "oil_meal_ratio": 22.1255,
+    "spread": -20.47,
+    "oil_rosario": 1564.8,
+    "meal_rosario": 318.1
+  }
+]
